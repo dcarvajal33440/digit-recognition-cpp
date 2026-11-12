@@ -16,7 +16,7 @@ place them there yourself. The loader validates magic numbers and file sizes.
 
 ## Results
 
-All numbers are from this repo's `results/` files, on a 2-vCPU Intel Xeon @ 2.1 GHz cloud VM (AVX-512, ~7 GiB RAM), g++ 13.3 on Ubuntu 24.04. Expect different absolute numbers on other hardware.
+All numbers are from this repo's `results/` files, on a AMD Ryzen 5 5600H (AVX2, ~5 GiB RAM), g++ 13.3 on Ubuntu 24.04. Expect different absolute numbers on other hardware.
 
 ### Accuracy on the 10,000 unseen test images
 
@@ -97,7 +97,7 @@ hardware counters.
 
 ## Not done
 No model save/load, no regularization or augmentation, no convolutional layers, no GPU. Performance numbers
-are for this machine; the SIMD width is chosen at compile time from the target ISA (AVX-512 → 16 lanes, else 8).
+are for this machine; the SIMD width is chosen at compile time from the target ISA (AVX2 → 8 lanes).
 
 ## License
 
